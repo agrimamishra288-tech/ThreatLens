@@ -3,9 +3,12 @@
 Project Details
 
 
-**Student Name** -  Agrima Mishra 
+**Student Name** -  Agrima Mishra
+
 **Roll Number** - 2501010207 
+
 **Course** - B.Tech CSE — Section B 
+
 **Subject** - Web Development 2 — Capstone Project 
 
 
@@ -23,7 +26,7 @@ ThreatLens bridges that gap by providing:
 - A Knowledge Base with clear explanations of common attack types
 - A Bookmarks system to save threats for later review
 
-> **Why it's needed:** Cybersecurity awareness is the #1 defense against most attacks. ThreatLens turns complex threat intelligence into an accessible, educational experience — no prior security knowledge required.
+**Why it's needed:** Cybersecurity awareness is the #1 defense against most attacks. ThreatLens turns complex threat intelligence into an accessible, educational experience — no prior security knowledge required.
 
 ---
 
