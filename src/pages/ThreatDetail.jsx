@@ -5,7 +5,7 @@ import useFetchThreats from '../hooks/useFetchThreats';
 import Loader from '../components/UI/Loader';
 import { ArrowLeft, BookmarkPlus, ShieldCheck, AlertOctagon } from 'lucide-react';
 
-// Object to store different text colors based on threat severity
+
 const severityColors = {
   Critical: 'text-red-600 dark:text-red-400',
   High: 'text-orange-600 dark:text-orange-400',
@@ -14,29 +14,15 @@ const severityColors = {
 };
 
 export default function ThreatDetail() {
-  // useParams gets the dynamic ID from the URL (e.g. /threat/123)
   const { id } = useParams();
-  
-  // dispatch allows us to send actions to our Redux store
   const dispatch = useDispatch();
-  
-  // Fetch our threat data using our custom hook
   const { threats, loading, error } = useFetchThreats();
-  
-  // Get bookmarks from Redux store to check if this threat is already saved
   const bookmarks = useSelector(state => state.bookmarks.items);
   const isBookmarked = bookmarks.some(b => b.id === id);
-
-  // Conditional Rendering: Show loading state
   if (loading) return <Loader fullScreen />;
-  
-  // Conditional Rendering: Show error state
   if (error) return <div className="text-red-500 text-center py-10">{error}</div>;
-
-  // Find the specific threat that matches the URL ID
+ 
   const threat = threats.find(t => t.id === id);
-
-  // Conditional Rendering: Show empty state if threat is not found
   if (!threat) {
     return (
       <div className="text-center py-20">
@@ -46,7 +32,6 @@ export default function ThreatDetail() {
     );
   }
 
-  // Event handler for adding a bookmark
   const handleBookmark = () => {
     dispatch(addBookmark(threat));
   };
