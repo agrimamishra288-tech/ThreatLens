@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API_KEY = 'f558677d85624cbc9a64dee02578d9b3';
-const API_URL = `https://newsapi.org/v2/everything?q=cybersecurity+OR+malware+OR+ransomware&language=en&sortBy=publishedAt&pageSize=30&apiKey=${API_KEY}`;
+const API_URL = '/api/news';
 
 export default function useFetchThreats() {
   const [threats, setThreats] = useState([]);
