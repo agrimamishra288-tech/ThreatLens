@@ -27,19 +27,14 @@ const KNOWLEDGE_BASE = [
 ];
 
 export default function Home() {
-  // Navigation hook to redirect users to different pages
   const navigate = useNavigate();
   
-  // State to hold what the user types in the search bar
   const [searchQuery, setSearchQuery] = useState('');
-  
-  // State to track which knowledge card is currently clicked/open
   const [activeCard, setActiveCard] = useState(null);
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // In a real app, pass query as URL param. Here we just navigate to explorer.
       navigate('/explorer');
     }
   };
@@ -47,7 +42,6 @@ export default function Home() {
   return (
     <div className="max-w-6xl mx-auto py-12 space-y-16 animate-in fade-in duration-700">
       
-      {/* Hero Section */}
       <section className="text-center space-y-8 relative">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand-500/20 via-slate-50/0 to-slate-50/0 dark:from-brand-500/10 dark:via-slate-900/0 dark:to-slate-900/0 blur-2xl"></div>
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white drop-shadow-sm">
@@ -60,7 +54,6 @@ export default function Home() {
           Explore, analyze, and manage real-world cyber threats. Stay informed with interactive dashboards and rule-based scam analysis.
         </p>
         
-        {/* Search Bar */}
         <form onSubmit={handleSearch} className="max-w-xl mx-auto relative group">
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
             <Search className="h-6 w-6 text-slate-400 group-focus-within:text-brand-500 transition-colors" />
@@ -78,7 +71,6 @@ export default function Home() {
         </form>
       </section>
       
-      {/* Interactive Knowledge Base Section */}
       <section className="pt-8">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
@@ -109,7 +101,6 @@ export default function Home() {
                 {item.description}
               </p>
               
-              {/* Expandable Content section: visible only when this card is active */}
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
                 activeCard === item.id ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0"
               }`}>
@@ -129,7 +120,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick Links Section */}
       <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-8">
         <Link to="/explorer" className="glass p-6 rounded-2xl flex flex-col items-center justify-center text-center gap-3 hover:bg-brand-50 dark:hover:bg-brand-900/20 hover:border-brand-200 dark:hover:border-brand-800 transition-all group">
           <Search className="text-slate-400 group-hover:text-brand-500 transition-colors" size={32} />
