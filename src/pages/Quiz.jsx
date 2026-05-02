@@ -60,29 +60,18 @@ const questions = [
 ];
 
 export default function Quiz() {
-  // State to track which question we are currently on (starts at 0)
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  
-  // State to track which option the user clicked
   const [selectedOption, setSelectedOption] = useState(null);
-  
-  // State to check if the user has answered the current question
   const [isAnswered, setIsAnswered] = useState(false);
-  
-  // State to keep track of the total score
   const [score, setScore] = useState(0);
-  
-  // State to determine if we should show the final result screen
   const [showResult, setShowResult] = useState(false);
 
-  // Function called when a user clicks an option
   const handleOptionSelect = (index) => {
-    if (isAnswered) return; // Prevent clicking multiple times
+    if (isAnswered) return;
     
     setSelectedOption(index);
     setIsAnswered(true);
 
-    // If the selected option is correct, increase the score by 1
     if (index === questions[currentQuestion].correctAnswer) {
       setScore(score + 1);
     }

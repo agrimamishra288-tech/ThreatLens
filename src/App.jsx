@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import Navbar from './components/Layout/Navbar';
 import Loader from './components/UI/Loader';
 
-// Lazy loaded pages
 const Home = lazy(() => import('./pages/Home'));
 const ThreatExplorer = lazy(() => import('./pages/ThreatExplorer'));
 const ThreatDetail = lazy(() => import('./pages/ThreatDetail'));

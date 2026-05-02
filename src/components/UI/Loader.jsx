@@ -1,7 +1,6 @@
 import { Loader2 } from 'lucide-react';
 
 export default function Loader({ fullScreen = false }) {
-  // If fullScreen is passed as true via props, make the loader take up the whole screen
   const containerClasses = `flex flex-col items-center justify-center space-y-4 ${
     fullScreen ? 'min-h-[calc(100vh-4rem)]' : 'min-h-[200px]'
   }`;

@@ -20,24 +20,16 @@ const SCAM_KEYWORDS = [
 ];
 
 export default function ScamAnalyzer() {
-  // State to hold the text the user pastes
   const [text, setText] = useState('');
-  
-  // State to show a loading spinner while analyzing
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  
-  // State to hold the final score and found keywords
   const [result, setResult] = useState(null);
 
-  // Function to analyze the text when the button is clicked
   const analyzeText = () => {
-    // Do nothing if text is empty
     if (!text.trim()) return;
     
     setIsAnalyzing(true);
     setResult(null);
 
-    // Simulate analysis delay
     setTimeout(() => {
       let score = 0;
       const foundKeywords = [];
@@ -50,7 +42,6 @@ export default function ScamAnalyzer() {
         }
       });
 
-      // Cap score at 100
       const finalScore = Math.min(score, 100);
       
       setResult({
@@ -65,7 +56,6 @@ export default function ScamAnalyzer() {
     if (!result || result.keywords.length === 0) return <p className="whitespace-pre-wrap">{text}</p>;
 
     let highlightedText = text;
-    // Simple naive highlighting (doesn't handle overlaps well, but good enough for this scope)
     result.keywords.forEach(kw => {
       const regex = new RegExp(`(${kw})`, 'gi');
       highlightedText = highlightedText.replace(regex, '<mark class="bg-red-200 dark:bg-red-900/50 text-red-900 dark:text-red-200 px-1 rounded font-semibold">$1</mark>');

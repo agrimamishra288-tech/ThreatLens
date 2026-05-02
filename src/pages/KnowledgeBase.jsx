@@ -1,6 +1,5 @@
 import { Shield, Bug, MailWarning, UserX, Lock, Network } from 'lucide-react';
 
-// Static data array for the educational content
 const knowledgeData = [
 {
     id: 'malware',
@@ -50,7 +49,6 @@ export default function KnowledgeBase() {
   return (
     <div className="max-w-6xl mx-auto space-y-10 animate-in fade-in duration-500">
       
-      {/* Header Section */}
       <div className="text-center space-y-4">
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
           Cyber Awareness <span className="text-brand-500">Knowledge Base</span>
@@ -61,7 +59,6 @@ export default function KnowledgeBase() {
         </p>
       </div>
 
-      {/* Grid of Knowledge Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {
           knowledgeData.map((item) => (

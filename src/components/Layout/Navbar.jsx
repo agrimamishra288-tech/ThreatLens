@@ -14,16 +14,9 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  // State to manage mobile menu open/close
   const [isOpen, setIsOpen] = useState(false);
-  
-  // Read the current theme from Redux store
   const theme = useSelector((state) => state.theme.mode);
-  
-  // Setup dispatch to send actions to Redux
   const dispatch = useDispatch();
-  
-  // Hook to get current URL path (used to highlight active link)
   const location = useLocation();
 
   return (
