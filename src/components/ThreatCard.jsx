@@ -16,7 +16,7 @@ const ThreatCard = React.memo(({ threat }) => {
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-2">
           <div className="p-2 bg-brand-100 dark:bg-brand-900/30 rounded-lg text-brand-600 dark:text-brand-400">
-            {}
+       
             {threat.category === 'Phishing' ? <Info size={20} /> :
              threat.category === 'Malware' || threat.category === 'Ransomware' ? <ShieldAlert size={20} /> :
              <AlertTriangle size={20} />}
@@ -26,7 +26,7 @@ const ThreatCard = React.memo(({ threat }) => {
             <span className="text-sm text-slate-500 dark:text-slate-400">{threat.category}</span>
           </div>
         </div>
-        { }
+     
         <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${severityColors[threat.severity] || severityColors.Medium}`}>
           {threat.severity}
         </span>
