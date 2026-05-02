@@ -1,7 +1,6 @@
-<div align="center">
 
-# 🛡️ ThreatLens
-### Cyber Threat Intelligence — Made Accessible
+
+# 🛡️ ThreatLens - Cyber Threat Intelligence — Made Accessible
 
 
 ---
