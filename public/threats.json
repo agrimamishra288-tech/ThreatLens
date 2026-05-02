@@ -1,0 +1,132 @@
+[
+  {
+    "id": "1",
+    "title": "WannaCry Ransomware",
+    "category": "Ransomware",
+    "severity": "Critical",
+    "description": "A worldwide cyberattack by the WannaCry ransomware cryptoworm, which targeted computers running the Microsoft Windows operating system by encrypting data and demanding ransom payments in the Bitcoin cryptocurrency.",
+    "prevention": [
+      "Keep systems and software updated.",
+      "Use robust antivirus software.",
+      "Regularly backup data offline."
+    ],
+    "date": "2017-05-12"
+  },
+  {
+    "id": "2",
+    "title": "Emotet",
+    "category": "Malware",
+    "severity": "High",
+    "description": "Originally a banking trojan, Emotet evolved into a modular botnet and malware distributor. It often spreads via spam emails containing malicious attachments or links.",
+    "prevention": [
+      "Train employees to recognize phishing emails.",
+      "Use email filtering solutions.",
+      "Implement network segmentation."
+    ],
+    "date": "2014-01-01"
+  },
+  {
+    "id": "3",
+    "title": "Stuxnet",
+    "category": "Worm",
+    "severity": "Critical",
+    "description": "A malicious computer worm that targeted SCADA systems and was responsible for causing substantial damage to Iran's nuclear program.",
+    "prevention": [
+      "Air-gap critical infrastructure.",
+      "Restrict USB drive usage.",
+      "Regular security audits."
+    ],
+    "date": "2010-06-01"
+  },
+  {
+    "id": "4",
+    "title": "Spear Phishing Campaigns",
+    "category": "Phishing",
+    "severity": "High",
+    "description": "Highly targeted phishing attacks aimed at specific individuals or organizations, often using personalized information to trick victims into revealing sensitive data.",
+    "prevention": [
+      "Implement Multi-Factor Authentication (MFA).",
+      "Conduct regular security awareness training.",
+      "Verify unexpected requests for sensitive information."
+    ],
+    "date": "Ongoing"
+  },
+  {
+    "id": "5",
+    "title": "Log4Shell",
+    "category": "Vulnerability",
+    "severity": "Critical",
+    "description": "A zero-day vulnerability in Log4j, a popular Java logging framework, allowing unauthenticated remote code execution (RCE).",
+    "prevention": [
+      "Patch Log4j to the latest version immediately.",
+      "Use Web Application Firewalls (WAF) to block exploit attempts.",
+      "Monitor logs for signs of exploitation."
+    ],
+    "date": "2021-12-09"
+  },
+  {
+    "id": "6",
+    "title": "Mirai Botnet",
+    "category": "DDoS",
+    "severity": "High",
+    "description": "A malware that turns networked devices running Linux into remotely controlled bots that can be used as part of a botnet in large-scale network attacks.",
+    "prevention": [
+      "Change default passwords on IoT devices.",
+      "Disable universal plug and play (UPnP) on routers.",
+      "Keep firmware updated."
+    ],
+    "date": "2016-08-01"
+  },
+  {
+    "id": "7",
+    "title": "Pegasus Spyware",
+    "category": "Spyware",
+    "severity": "Critical",
+    "description": "A spyware developed by the Israeli cyber-arms firm NSO Group that can be covertly installed on mobile phones running most versions of iOS and Android.",
+    "prevention": [
+      "Keep mobile OS and apps updated.",
+      "Avoid clicking on suspicious links.",
+      "Restart devices regularly."
+    ],
+    "date": "2016-08-01"
+  },
+  {
+    "id": "8",
+    "title": "SQL Injection (SQLi)",
+    "category": "Web Attack",
+    "severity": "High",
+    "description": "A code injection technique used to attack data-driven applications, in which malicious SQL statements are inserted into entry fields for execution.",
+    "prevention": [
+      "Use parameterized queries (Prepared Statements).",
+      "Employ input validation and sanitization.",
+      "Use Object-Relational Mapping (ORM) frameworks."
+    ],
+    "date": "Ongoing"
+  },
+  {
+    "id": "9",
+    "title": "Cross-Site Scripting (XSS)",
+    "category": "Web Attack",
+    "severity": "Medium",
+    "description": "A type of vulnerability typically found in web applications that enables attackers to inject client-side scripts into web pages viewed by other users.",
+    "prevention": [
+      "Escape all user input.",
+      "Implement Content Security Policy (CSP).",
+      "Sanitize HTML content."
+    ],
+    "date": "Ongoing"
+  },
+  {
+    "id": "10",
+    "title": "DarkSide Ransomware",
+    "category": "Ransomware",
+    "severity": "Critical",
+    "description": "A ransomware-as-a-service (RaaS) operation that targeted the Colonial Pipeline, causing significant disruptions to fuel supplies in the US.",
+    "prevention": [
+      "Implement robust endpoint protection.",
+      "Segment networks to prevent lateral movement.",
+      "Maintain offline, immutable backups."
+    ],
+    "date": "2021-05-07"
+  }
+]
