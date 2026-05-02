@@ -12,7 +12,7 @@ Project Details
 
 ---
 
-## 🔍 What is ThreatLens?
+##  What is ThreatLens?
 
 **ThreatLens** is a full-featured, client-side **Cyber Threat Intelligence (CTI) web application** built to make cybersecurity information accessible, interactive, and educational for everyday users. In a world where cyber attacks are growing more sophisticated every day — from phishing emails to ransomware — most people lack the tools and knowledge to protect themselves.
 
@@ -30,35 +30,35 @@ ThreatLens bridges that gap by providing:
 
 ## ✨ Features
 
-### 🏠 Home Page
+###  Home Page
 - Hero section with animated gradient background and a global search bar
 - Quick Knowledge Base cards (Malware, Phishing, Ransomware) with expandable details and defense tips
 - Quick navigation links to all major sections of the app
 
-### 🔎 Threat Explorer
+###  Threat Explorer
 - Browse and search a curated dataset of real-world cyber threats
 - Filter threats by **category** (Malware, Ransomware, Phishing, etc.) and **severity** (Critical, High, Medium, Low)
 - Each threat displayed as a responsive card with severity badge, category tag, and "View Details" button
 
-### 📄 Threat Detail Page
+###  Threat Detail Page
 - Deep-dive view of any individual threat
 - Shows full description, affected systems, severity, category, and recommended mitigation strategies
 - Bookmark/unbookmark threats directly from the detail page
 
-### 📊 Analytics Dashboard
+###  Analytics Dashboard
 - **Donut/Pie Chart** — Visualizes threat distribution across categories
 - **Bar Chart** — Shows severity distribution (Critical / High / Medium / Low)
 - **Quick Stats Panel** — Total threats, critical count, number of categories, system health
 - Built with **Recharts** for responsive, animated data visualizations
 
-### 🔬 Scam Message Analyzer
+###  Scam Message Analyzer
 - Paste any suspicious email, SMS, or message into the analyzer
 - A **rule-based keyword engine** scans for 15+ high-risk patterns (e.g., "OTP", "bank account", "lottery", "urgent", "social security")
 - Returns a **risk score (0–100%)** with a circular progress indicator
-- Color-coded verdict: ✅ Appears Safe / ⚠️ Proceed with Caution / 🔴 Highly Suspicious
+- Color-coded verdict:  Appears Safe /  Proceed with Caution /  Highly Suspicious
 - Highlights matched keywords inline within the message text
 
-### 🧠 Cybersecurity Quiz
+###  Cybersecurity Quiz
 - 5-question multiple-choice quiz covering core cybersecurity concepts
 - Topics include: Ransomware, Phishing, Password Security, MFA, Zero-Day Vulnerabilities
 - Visual progress bar tracks advancement through the quiz
@@ -81,7 +81,7 @@ ThreatLens bridges that gap by providing:
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ```
 ThreatLens/
@@ -189,7 +189,7 @@ npm run lint      # Run ESLint to check code quality
 
 ---
 
-## 📖 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 This project demonstrates the following Web Development 2 concepts:
 
@@ -207,7 +207,7 @@ This project demonstrates the following Web Development 2 concepts:
 
 ---
 
-## 📸 Pages Overview
+##  Pages Overview
 
 | Page | Route | Description |
 |---|---|---|
@@ -219,14 +219,4 @@ This project demonstrates the following Web Development 2 concepts:
 | Quiz | `/quiz` | 5-question cybersecurity quiz |
 | Knowledge Base | `/knowledge` | Educational cards on threat types |
 | Bookmarks | `/bookmarks` | View and manage saved threats |
-
----
-
-<div align="center">
-
-Made with ❤️ by **Agrima Mishra** | Roll No: 2501010207 | B.Tech CSE Section B
-
-*Web Development 2 — Capstone Project*
-
-</div>
 
