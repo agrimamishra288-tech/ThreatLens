@@ -2,12 +2,11 @@
 
 Project Details
 
-| Field | Details |
-|---|---|
-| **Student Name** | Agrima Mishra |
-| **Roll Number** | 2501010207 |
-| **Course** | B.Tech CSE — Section B |
-| **Subject** | Web Development 2 — Capstone Project |
+
+**Student Name** -  Agrima Mishra 
+**Roll Number** - 2501010207 
+**Course** - B.Tech CSE — Section B 
+**Subject** - Web Development 2 — Capstone Project 
 
 
 ---
@@ -122,19 +121,19 @@ ThreatLens/
 
 ##  Technology Stack
 
-| Technology | Version | Purpose |
-|---|---|---|
-| **React** | 19 | UI component library — core framework |
-| **Vite** | 8 | Lightning-fast dev server and build tool |
-| **React Router DOM** | 7 | Client-side routing and navigation |
-| **Redux Toolkit** | 2 | Global state management (bookmarks, theme) |
-| **React-Redux** | 9 | React bindings for Redux store |
-| **Recharts** | 3 | Declarative chart components (Pie, Bar) |
-| **Lucide React** | Latest | SVG icon library |
-| **Tailwind CSS** | 3 | Utility-first CSS styling framework |
-| **Tailwind Merge** | 3 | Safely merge conflicting Tailwind class names |
-| **PostCSS + Autoprefixer** | — | CSS post-processing for cross-browser support |
-| **ESLint** | 10 | Code quality and linting |
+ Technology and Version used along with thier Purpose 
+
+- **React** version - 19 used for UI component library — core framework 
+- **Vite** version - 8 used for Lightning-fast dev server and build tool 
+- **React Router DOM** version 7 used for Client-side routing and navigation 
+- **Redux Toolkit** version 2 used for Global state management (bookmarks, theme) 
+- **React-Redux** version - 9 used for React bindings for Redux store 
+- **Recharts**  version - 3 used for Declarative chart components (Pie, Bar) 
+- **Lucide React**  Latest version used for SVG icon library
+- **Tailwind CSS** version - 3 used for Utility-first CSS styling framework 
+- **Tailwind Merge** version - 3 used to Safely merge conflicting Tailwind class names 
+- **PostCSS + Autoprefixer** used for CSS post-processing for cross-browser support 
+- **ESLint**  version - 10 used for Code quality and linting 
 
 ---
 ##  How It Works
@@ -209,14 +208,14 @@ This project demonstrates the following Web Development 2 concepts:
 
 ##  Pages Overview
 
-| Page | Route | Description |
-|---|---|---|
-| Home | `/` | Hero, quick knowledge base, navigation links |
-| Threat Explorer | `/explorer` | Browse, search, and filter all threats |
-| Threat Detail | `/threat/:id` | Full details for a single threat |
-| Dashboard | `/dashboard` | Analytics charts and quick stats |
-| Scam Analyzer | `/analyzer` | Paste & analyze suspicious messages |
-| Quiz | `/quiz` | 5-question cybersecurity quiz |
-| Knowledge Base | `/knowledge` | Educational cards on threat types |
-| Bookmarks | `/bookmarks` | View and manage saved threats |
+
+
+- Home - `/` - Hero, quick knowledge base, navigation links 
+- Threat Explorer - `/explorer`-  Browse, search, and filter all threats 
+- Threat Detail - `/threat/:id` - Full details for a single threat 
+- Dashboard - `/dashboard` - Analytics charts and quick stats 
+- Scam Analyzer - `/analyzer` - Paste & analyze suspicious messages 
+- Quiz - `/quiz` - 5-question cybersecurity quiz 
+- Knowledge Base - `/knowledge` - Educational cards on threat types 
+- Bookmarks - `/bookmarks` - View and manage saved threats 
 
