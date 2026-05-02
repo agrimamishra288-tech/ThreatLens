@@ -11,7 +11,7 @@ export default function ThreatExplorer() {
   const [categoryFilter, setCategoryFilter] = useState('');
   const [sortOrder, setSortOrder] = useState('');
   
-  // Pagination
+
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
@@ -49,11 +49,9 @@ export default function ThreatExplorer() {
     return Array.from(cats);
   }, [threats]);
 
-  // Pagination Logic
   const totalPages = Math.ceil(filteredThreats.length / itemsPerPage);
   const paginatedThreats = filteredThreats.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
-  // Reset to page 1 when filters change
   useMemo(() => setCurrentPage(1), [debouncedSearch, categoryFilter, sortOrder]);
 
   if (loading) return <Loader fullScreen />;
