@@ -3,22 +3,7 @@
 # 🛡️ ThreatLens - Cyber Threat Intelligence — Made Accessible
 
 
----
 
-##  Project Details
-
-
-- **Student Name** : Agrima Mishra
-
-- **Roll Number** : 2501010207 
-
-- **Course** : B.Tech CSE — Section B
-
-
-- **Subject** : Web Development 2 — Capstone Project
-
-
----
 
 ##  What is ThreatLens?
 
